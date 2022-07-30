@@ -26,8 +26,9 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
+// The conditional statement compares the value of the previously declared variable 'name' and to the string "Mary." 
+// If the value for 'name' is equal to the string "Mary", then the if code block will run and log "Hi, Mary!" to the console.
+// Because the value for 'name' is not "Mary", the else code block will run instead and "How do you do?" will be logged to the console.
 // 
 //
 
@@ -45,10 +46,12 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// Variables secret and code are declared and code is assigned a value of 123.
+// The first if statement checks to see if the value of code is equal to 123. In this case it is, so the code block runs.
+// Secret is assigned the string 'super' and code is assigned the value of 123 * 2 (246).
+// The second if statement checks to see if the value of code is greater than 250.
+// The value of code is 246, thus the codeblock does not run.
+// Finally, the value of for secret ("super") is logged to the console.
 
 //CODE
 /*
@@ -70,10 +73,16 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// For the first code block to run, isStudent must be true AND zip must be greater than 80,000 (typo?)
+// In our case, isStudent is true but zip is less than 80,000, so we move on to the next else if block.
+// The first else if statement code block will run if isStuent is false OR if age is less than 30.
+// Age is greater than 30 AND isStudent is true, so this code block does not run and we move on to the next if else.
+// The next if else statement will run because isStudent is true. So 'Welcome to Prime!' is logged to the console.
+
+
+
+
+
 
 //CODE
 /*
@@ -129,6 +138,11 @@ if (number >= 2) {
 // colorTwo is set to 'red', and mix is set to true. We check if mix is true 
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
+// FIX: the instructions state that if mix is true, then colorOne and colorTwo should be assigned the value 'purple'.
+// The if statement correctly checks if the value of mix is true and assigns colorOne to 'purple', however it does not
+// assign colorTwo to 'purple'. The following line should be added to the if statement code block...
+// colorTwo = 'purple'.
+
 /*
 let colorOne = 'red';
 let colorTwo = 'blue';
@@ -137,11 +151,25 @@ let mix = true;
 if (mix === true) {
   colorOne = 'purple';
 }
+
+
+
 */
+
+
+
+
+
 
 //5. We start with two variables -- temp is set to 40 and time is set to 4.
 // We check if temp is higher than 39 and if time is greater or equal to  4 
 // -- they are so we console.log 'throw away the food!'
+
+
+// FIX: The instructions state that for the codeblock to run temp must be greater than 39 AND
+// time must be greater than or equal to 4. The condition of the if statement however uses the OR operator rather than
+// the AND operator. Replace ( || ) with ( && ).
+
 
 /*
 let temp = 40;
@@ -155,6 +183,11 @@ if (temp > 39 || time >= 4) {
 //6. We start with two variables -- age is set to 21 and minAge is set to 21.
 // We check if age is greater than or equal to minAge 
 // -- it is, so we console.log 'enter'.
+
+// FIX: In this example, the if statement states that if minAge is less than or equal to age,
+// then 'no entry' should be logged to the console.log. According to the instructions, the console
+// should log 'enter' under these conditions instead. The else statement also has the incorrect message. 
+// To fix this, the contents of the if codeblock and the else codeblock should be switched.
 
 /*
 let age = 21;
